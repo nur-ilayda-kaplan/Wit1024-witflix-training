@@ -22,6 +22,11 @@ header .user-panel input {
   width: 7rem;
 }
 
+header .fa-solid:nth-child(2) {
+  position: absolute;
+  right: 6.5rem;
+}
+
 header .user-panel img {
   border-radius: 100px;
   width: 2.5rem;
@@ -40,4 +45,58 @@ header nav {
 header nav a {
   color: rgb(134, 133, 133);
   text-decoration: none;
+  position: relative;
+  left: 20px;
+}
+
+/* hero */
+main {
+  aspect-ratio: 5/3;
+  border: 1px solid black;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+}
+
+.user-rating i {
+  color: red;
+}
+
+.content-rating {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  margin: 0 0.5rem;
+}
+
+.main-movie {
+  width: 60%;
+}
+
+.movie-details span {
+  color: red;
+  font-weight: bold;
+}
+
+.movie-details p {
+  margin: 0.5rem 0;
+}
+
+button {
+  background: red;
+  border: 0;
+  padding: 0.6rem 2.1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+button i {
+  margin-left: -1rem;
+  margin-right: 0.5rem;
 }
