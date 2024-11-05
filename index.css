@@ -15,11 +15,14 @@ header .user-panel {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 header .user-panel input {
   padding: 0.3rem;
   width: 7rem;
+  padding: 0.3rem 1.8rem 0.3rem 0.3rem;
 }
 
 header .fa-solid:nth-child(2) {
@@ -35,6 +38,7 @@ header .user-panel img {
 header h1 {
   color: red;
   margin: 0;
+  flex: 1;
 }
 
 header nav {
@@ -45,8 +49,6 @@ header nav {
 header nav a {
   color: rgb(134, 133, 133);
   text-decoration: none;
-  position: relative;
-  left: 20px;
 }
 
 /* hero */
@@ -59,7 +61,7 @@ main {
   align-items: center;
 }
 
-.hero h2 {
+h2 {
   text-transform: uppercase;
 }
 
@@ -100,3 +102,5 @@ button i {
   margin-left: -1rem;
   margin-right: 0.5rem;
 }
+
+/* Suggestion */
