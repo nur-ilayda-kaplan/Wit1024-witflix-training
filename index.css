@@ -37,7 +37,7 @@ header .user-panel img {
   border-radius: 100px;
   width: 2.5rem;
 }
-header .hamburger{
+header .hamburger {
   display: none;
 }
 
@@ -133,6 +133,10 @@ button i {
   display: flex;
   gap: 1.5rem;
 }
+.suggestion-movies-2 {
+  display: flex;
+  gap: 1.5rem;
+}
 
 .movie-card {
   border: 1px solid black;
@@ -197,7 +201,7 @@ footer h5 {
   height: 2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   header {
     flex-wrap: wrap;
   }
@@ -212,10 +216,13 @@ footer h5 {
   header .user-panel {
     display: none;
   }
-}
-header .hamburger{
-  display: block;
-}
+
+  header .hamburger {
+    display: block;
+  }
+  header .hamburger:hover {
+    opacity: 50%;
+  }
 
   .nav-menu {
     display: block;
@@ -227,6 +234,10 @@ header .hamburger{
 
   .suggestion-movies {
     overflow-x: scroll;
+  }
+
+  .movie-card {
+    min-width: 9rem;
   }
 
   footer {
