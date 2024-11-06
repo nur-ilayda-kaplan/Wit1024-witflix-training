@@ -3,7 +3,10 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+h2,
+h4 {
+  text-transform: uppercase;
+}
 /* header */
 header {
   display: flex;
@@ -34,6 +37,9 @@ header .user-panel img {
   border-radius: 100px;
   width: 2.5rem;
 }
+header .hamburger{
+  display: none;
+}
 
 header h1 {
   color: red;
@@ -59,10 +65,6 @@ main {
   padding: 1rem;
   display: flex;
   align-items: center;
-}
-
-h2 {
-  text-transform: uppercase;
 }
 
 .user-rating i {
@@ -104,3 +106,140 @@ button i {
 }
 
 /* Suggestion */
+.suggestion-row {
+  margin-bottom: 2rem;
+}
+
+.suggestion-row-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestion-row-title a {
+  text-decoration: none;
+  color: gray;
+}
+
+.suggestion-row-title a:hover {
+  color: red;
+}
+
+.suggestion-row-title h3 {
+  margin: 0.5rem 0;
+}
+
+.suggestion-movies {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.movie-card {
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.movie-card h4 {
+  margin: 0;
+}
+
+.movie-card .content-rating {
+  margin-left: 0;
+}
+
+.movie-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.movie-card button {
+  padding: 0.5rem 1.8rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.movie-card button i {
+  margin-left: -0.8rem;
+  margin-right: 0.3rem;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer h5 {
+  margin-top: 0;
+}
+
+.footer-navigation nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-navigation {
+  min-width: 120px;
+}
+
+.mobile-app-navigation {
+  min-width: 230px;
+}
+
+.mobile-app-navigation img {
+  height: 2rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  header .user-panel {
+    display: none;
+  }
+}
+header .hamburger{
+  display: block;
+}
+
+  .nav-menu {
+    display: block;
+  }
+
+  .main-movie {
+    width: 100%;
+  }
+
+  .suggestion-movies {
+    overflow-x: scroll;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer nav {
+    justify-content: center;
+  }
+
+  .social-navigation,
+  .mobile-app-navigation {
+    width: 100%;
+  }
+}
